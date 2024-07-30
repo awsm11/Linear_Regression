@@ -1,0 +1,25 @@
+This algorithm allows you to estimate your target data by using a model which provides a statistical relationship
+between given data tables or arrays by reading from a file.
+The target data you want to find out is a approximation of its exact result.
+
+*** If you run the code without any changes ***
+The algorithm contains specific data taken from an excel file as an example.
+Thus you should enter the values in the excel table as input.
+For instance;
+Please enter the value you want to find out its result: "7500"
+Please type the name of your input: "Total Premium"
+Please type the name of target: "Sales"
+Target Prediction: 130697.24070967002
+
+
+The example usage of this algorithm takes a few seconds without changing any iteration counts.
+If you increase iteration counts ( w and b ranges and spaces), the prediction will be more close to the its exact
+solution.
+However this approach could take more times depend on number of iterations.
+More iteration means more time.
+
+If model function does not make sense in terms of the data defined by you;
+- The data may not be suitable for linear regression with one variable.
+- Increasing the number of iterations might be solution of the problem.
+
+The algorithm includes progress bar so you can follow process as the code is executed.

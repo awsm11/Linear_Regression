@@ -3,6 +3,7 @@ between given data tables or arrays by reading from a file.
 The target data you want to find out is a approximation of its exact result.
 
 *** If you run the code without any changes ***
+!! Essential !! : First of all, You need to download the excel file consisting of data table to run the code properly.
 The algorithm contains specific data taken from an excel file as an example.
 Thus you should enter the values in the excel table as input.
 For instance;

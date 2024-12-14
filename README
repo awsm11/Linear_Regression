@@ -2,6 +2,7 @@ This algorithm allows you to estimate your target data by using a model which pr
 between given data tables or arrays by reading from a file.
 The target data you want to find out is a approximation of its exact result.
 The code is representing the Linear Regression with one variable.
+This algorithm is a prediction program that calculates the required sales amount to earn the desired premium.
 
 *** If you run the code without any changes ***
 !! Essential !! : First of all, You need to download the excel file consisting of data table to run the code properly.

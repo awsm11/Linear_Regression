@@ -16,6 +16,6 @@ def plt_graph(x, y, f, f_est, x_int):
     plt.scatter(x_int, f_est, marker='o', c='yellow', edgecolor='black', s=75, label='prediction point')
     plt.text(x_int, round(f_est, 5), f'({x_int}, {round(f_est, 3)})', verticalalignment='bottom',
              horizontalalignment='right')
-    print("Target Prediction:", f_est)
+    print("Target Prediction:", f_est,"$")
     plt.legend()
     plt.show()

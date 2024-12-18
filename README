@@ -1,10 +1,15 @@
 This algorithm allows you to estimate your target data by using a model which provides a statistical relationship
 between given data tables or arrays by reading from a file.
-The target data you want to find out is a approximation of its exact result.
-The code is representing the Linear Regression with one variable.
-This algorithm is a prediction program that calculates the required sales amount to earn the desired premium.
+The target data you want to find out is an approximation of its exact result.
+The code is representing the Linear Regression with one variable by using Gradient descent method.
 
-*** If you run the code without any changes ***
+***Problem Statement***
+As the CEO of a restaurant franchise, you are exploring options for expanding your business by opening
+new outlets in different cities. Your goal is to target cities that promise higher profitability.
+You currently have data on the population and profits of your existing restaurants in various cities.
+Additionally, you have information on the population of potential candidate cities where new outlets could be established.
+
+*** Run the code ***
 !! Essential !! : First of all, You need to download the excel file consisting of data table to run the code properly.
 The algorithm contains specific data taken from an excel file as an example.
 !! Essential !! : Secondly, You need to define the location of excel file where you have downloaded into pd.read_excel function 
@@ -13,28 +18,25 @@ pd.read_excel(r'\file location\excel file name')
 for instance:
 excel_set = pd.read_excel(r'\Excel Data\data.xlsx')
 Thirdly,
-Thus you should enter the values in the excel table as input.
+Thus you should enter the values in the excel table as an input.
 For instance;
-Please enter the value you want to find out its result: "7500"
-Please type the name of your input: "Total Premium"
-Please type the name of target: "Sales"
-Target Prediction: 130697.24070967002
+Please enter the population: "40000"
+Profit Prediction: "10351"
 
 
 The example usage of this algorithm takes a few seconds without changing any iteration counts.
-If you increase iteration counts ( w and b ranges and spaces), the prediction will be more close to the its exact
-solution.
+If you increase iteration counts, the prediction will be more close to the its exact solution.
 However this approach could take more times depend on number of iterations.
 More iteration means more time.
 
 *** To enter data sets manually ***
 You can also create your specific data arrays manually and run the algorithm.
-There is only one thing that you should do is to write your data arrays into x_train and y_train variables instead of excel data.
+There is only one thing that you should do is to write your data arrays into x_axis and y_axis variables instead of excel data.
 Code will be independent of the excel data automatically.
-(x_train and y_train variables are exist in the file "Regression_algorithm.py")
+(x_axis and y_axis variables are exist in the file "Regression_algorithm.py")
 for instance,
-x_train = np.array([123, 260, 303, 176, 188, 160, 196, 389, 252, 220])
-y_train = np.array([199, 499, 599, 252, 255, 242, 259, 573, 469, 475])
+x_axis = np.array([123, 260, 303, 176, 188, 160, 196, 389, 252, 220])
+y_axis = np.array([199, 499, 599, 252, 255, 242, 259, 573, 469, 475])
 
 
 If model function does not make sense in terms of the data defined by you;

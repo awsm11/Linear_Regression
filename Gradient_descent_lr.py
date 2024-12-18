@@ -1,6 +1,7 @@
 from gd_excel import x_axis, y_axis, n
 import numpy as np
 from gradient_plot import plt_modelfunction
+from tqdm import tqdm
 
 
 def cost_function(x, y, w, b):
@@ -42,7 +43,7 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iteration, cost_function, grad
     w_model = []
     b_model = []
 
-    for i in range(num_iteration):
+    for i in tqdm(range(num_iteration)):
         dev_jw, dev_jb = gradient_function(x, y, w, b)
 
         w = w - alpha * dev_jw
@@ -54,7 +55,7 @@ def gradient_descent(x, y, w_in, b_in, alpha, num_iteration, cost_function, grad
 
     j_wb_min = np.min(j_wb_storage)
 
-    for i in range(num_iteration):
+    for i in tqdm(range(num_iteration)):
         if j_wb_storage[i] == j_wb_min:
             w_model = w_storage[i]
             b_model = b_storage[i]

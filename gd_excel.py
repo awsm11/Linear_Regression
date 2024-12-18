@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 
-excel_set = pd.read_excel(r'\Excel Data\quiz.xlsx')
+excel_set = pd.read_excel(r'\Excel Data\pf_data.xlsx')
 
 x_axis = []
 

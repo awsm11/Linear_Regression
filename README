@@ -16,7 +16,7 @@ The algorithm contains specific data taken from an excel file as an example.
 as shown below. (this function is in the file "Reading_excel.py")
 pd.read_excel(r'\file location\excel file name')
 for instance:
-excel_set = pd.read_excel(r'\Excel Data\data.xlsx')
+excel_set = pd.read_excel(r'\Excel Data\pf_data.xlsx')
 Thirdly,
 Thus you should enter the values in the excel table as an input.
 For instance;
